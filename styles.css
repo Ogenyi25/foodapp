@@ -261,3 +261,54 @@ img {
 .button:hover {
     background-color: var(--first-color-alt);
 }
+
+/*========== ABOUT SECTION STYLES ========*/
+.about_data {
+    text-align: center;
+    margin-top: var(--mb-6);
+}
+.about_description {
+    margin-bottom: var(--mb-3);
+}
+.about_image {
+    width: 280px;
+    height: 250px;
+    border-radius: 1rem;
+    justify-self: center;
+}
+
+
+
+
+/*========== SERVICE SECTION STYLES ========*/
+
+
+
+
+
+
+/*========== MENU SECTION STYLES ========*/
+
+
+
+
+
+/*========== APP SECTION STYLES ========*/
+
+
+
+
+
+/*========== CONTACT SECTION STYLES ========*/
+
+
+
+
+
+/*========== FOOTER SECTION STYLES ========*/
+
+
+
+
+
+/*========== MEDIA QUERY STYLES ========*/
