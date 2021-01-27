@@ -222,3 +222,42 @@ img {
     visibility: visible;
     bottom: 1.5rem;
 }
+
+
+/*======== Styles for the home section ===========*/
+.home_container {
+    height: calc(100vh - var(--header-height));
+    align-content: center;
+}
+.home_title {
+    margin-top: 100px;
+    font-size: var(--biggest-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+}
+.home_subtitle {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-4);
+}
+
+
+.home_image {
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+    border-radius: 100%;
+}
+
+/*======== Styles for button ===========*/
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .4s;
+}
+.button:hover {
+    background-color: var(--first-color-alt);
+}
