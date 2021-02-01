@@ -344,10 +344,24 @@ img {
 }
 
 
-
-
 /*========== APP SECTION STYLES ========*/
-
+.app_data {
+    text-align: center;
+}
+.app_description {
+    margin-bottom: var(--mb-5);
+}
+.app_stores {
+    margin-bottom: var(--mb-4);
+}
+.app_store {
+    width: 120px;
+    margin: var(--mb-1);
+}
+.app_image {
+    width: 230%;
+    justify-self: center;
+}
 
 
 
