@@ -1,5 +1,5 @@
 /*========= GOOGLE FONTS =========*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap');
 
 
 /*======== VARIABLE CSS ==============*/
@@ -15,7 +15,7 @@
     --container-color: #ffffff;
 
     /*======== font and typography ==========*/
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Poppins', 'Pacifico', sans-serif;
     --biggest-font-size: 2.25rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -47,6 +47,7 @@
 @media screen and (min-width: 768px) {
     :root {
         --biggest-font-size: 3rem;
+        --big-font-size: 2rem;
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
@@ -176,10 +177,11 @@ img {
         text-align: center;
         background-color: var(--body-color);
         transition: .4s;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.250);
         border-radius: 0 0 1rem 1rem;
         z-index: var(--z-fixed);
     }
+    
 }
 
 .nav_item {
@@ -188,6 +190,11 @@ img {
 .nav_link, .nav_logo, .nav_toggle {
     color: var(--text-color);
     font-weight: var(--font-medium);
+}
+.nav_logo {
+    font-family: 'Pacifico';
+    color: var(--first-color);
+    font-size: var(--big-font-size);
 }
 .nav_logo:hover {
     color: var(--first-color);
@@ -253,7 +260,7 @@ img {
     align-content: center;
 }
 .home_title {
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: var(--biggest-font-size);
     color: var(--first-color);
     margin-bottom: var(--mb-1);
@@ -440,6 +447,11 @@ img {
 
 /*========== MEDIA QUERY STYLES ========*/
 @media screen and (min-width: 576px){
+    .nav_logo {
+        font-family: 'Pacifico';
+        color: var(--first-color);
+        font-size: var(--big-font-size);
+    }
     .home_container, .about_container, .app_container {
         grid-template-columns: repeat(2,1fr);
         align-items: center;
@@ -464,6 +476,11 @@ img {
 }
 
 @media screen and (min-width: 768px){
+    .nav_logo {
+        font-family: 'Pacifico';
+        color: var(--first-color);
+        font-size: var(--big-font-size);
+    }
     body {
         margin: 0;
     }
@@ -511,6 +528,11 @@ img {
 }
 
 @media screen and (min-width: 960px) {
+    .nav_logo {
+        font-family: 'Pacifico';
+        color: var(--first-color);
+        font-size: var(--big-font-size);
+    }
     .bd-container {
         margin-left: auto;
         margin-right: auto;
