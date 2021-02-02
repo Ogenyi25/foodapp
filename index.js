@@ -91,8 +91,6 @@ if(selectedTheme){
     themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
-
-
 //activate or deactivate the theme manually
 themeButton.addEventListener ('click', ()=>{
     //add or remove the dark / icon theme
@@ -101,4 +99,21 @@ themeButton.addEventListener ('click', ()=>{
     //we save the theme and the current icon that the user choosed
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
+})
+
+/*================= SCROLL REVEAL ANIMATION =============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '40px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal(`.home_data, .home_image, 
+            .about_data, .about_image, 
+            .services_content, .menu_content, 
+            .app_data, .app_image, 
+            .contact_data, .contact_button, 
+            .footer_content`, {
+    interval: 200
 })
